@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Sinsitre';
+  src: url('../fonts/Sinistre-StCaroline.woff2') format('woff2'),
+       url('../fonts/Sinistre-StCaroline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html{
+  overflow: hidden;
+ }
+
+body {
+  background-color: black;
+  /*background-image: url('');*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  place-items: center center;
+  }
+
+
+
+
+  h2{
+    font-family: 'Sinsitre', auto;
+    font-size: 15vw;
+    color: #ffd700; 
+    background-color: none;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    inset: auto;
+    padding: 10%;
+    left: 0%;
+    top: 10%;
+    right: auto;
+    
+  }
