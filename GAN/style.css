@@ -144,12 +144,14 @@ border-radius: 200px 200px 200px 200px;
     font-size: 3em;
     padding: 5px;
     position: fixed;
-    top: 40%;
-    left: 20%;
+    top: 30%;
+    left: 15%;
+    border-radius: 50%;
   }
     
-  #GAN3D:hover {
-    filter: drop-shadow(0 0 0.1rem rgb(251, 255, 0));
+  .GAN3D:hover {
+    filter: drop-shadow(0 0 3rem #ffd700);
+    border-radius: 50%;
   }
   
   
@@ -158,11 +160,13 @@ border-radius: 200px 200px 200px 200px;
     font-size: 3em;
     padding: 5px;
     position: fixed;
-    top: 40%;
-    right: 20%;
+    top: 30%;
+    right: 15%;
+    border-radius: 50%;
   }
     
-  #GANvid:hover {
-    filter: drop-shadow(0 0 0.1rem rgb(251, 255, 0));
+  .GANvid:hover {
+    filter: drop-shadow(0 0 3rem #ffd700);
+    border-radius: 50%;
   }
   
