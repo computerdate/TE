@@ -1,9 +1,16 @@
 
+@font-face {
+  font-family: 'Celattin';
+  src: url('../../fonts/celattin font.woff2') format('woff2'),
+       url('../../fonts/celattin font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: 'NectoMono';
-  src: url('../../fonts/Necto-Mono.woff2') format('woff2'),
-       url('../../fonts/Necto-Mono.woff') format('woff');
+  font-family: 'Centers';
+  src: url('../../fonts/Centers George.woff2') format('woff2'),
+       url('../../fonts/Centers George.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,9 +23,8 @@
   font-style: normal;
 }
 
-
-*{
-  overflow: hidden;
+html {
+overflow: hidden;
 }
 
 
@@ -37,15 +43,17 @@
     header{
       position: fixed;
       top:3%;
-      left: 3%;
+      left: 0%;
       z-index: 100;
-     
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
     }
     header h1 {
       cursor: pointer;
       margin: 0;
-      font-family: 'Sinsitre', auto  ;
-      font-size: 3vw;  
+      font-family: 'Centers', auto  ;
+      font-size: 10vh;  
       color: #ffd700; 
     }
 
@@ -88,6 +96,13 @@ text-decoration: none;
   width: 100%;
 }
 
+/*
+.column:hover{
+  filter: drop-shadow(0 0 3rem #ffd700);
+  border-radius: 50%;
+}
+*/
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -103,19 +118,24 @@ text-decoration: none;
     max-width: 100%;
   }
 }
-    
-.GAN3D {
-    float: right;
-    font-size: 3em;
-    padding: 5px;
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    border-radius: 50%;
-  }
-    
-  .GAN3D:hover {
-    filter: drop-shadow(0 0 3rem #ffd700);
-    border-radius: 50%;
-  }
-  
+
+footer{
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  z-index: 1000;
+  transform: rotate(90deg);
+ 
+}
+footer h1 {
+  cursor: pointer;
+  margin: 0;
+  font-family: 'Celattin', auto  ;
+  font-size: 3vw;  
+  color: #ffd700; 
+}
+
+footer:hover{
+  color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgba(255, 0, 255, 1), 0 0 5px #fff;
+}

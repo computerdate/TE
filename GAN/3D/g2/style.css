@@ -1,20 +1,28 @@
 
+@font-face {
+  font-family: 'Celattin';
+  src: url('../../../fonts/celattin font.woff2') format('woff2'),
+       url('../../../fonts/celattin font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'NectoMono';
-    src: url('../../../fonts/Necto-Mono.woff2') format('woff2'),
-         url('../../../fonts/Necto-Mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Sinsitre';
-    src: url('../../../fonts/Sinistre-StCaroline.woff2') format('woff2'),
-         url('../../../fonts/Sinistre-StCaroline.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Centers';
+  src: url('../../../fonts/Centers George.woff2') format('woff2'),
+       url('../../../fonts/Centers George.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sinsitre';
+  src: url('../../../fonts/Sinistre-StCaroline.woff2') format('woff2'),
+       url('../../../fonts/Sinistre-StCaroline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
   
   *{
     overflow: hidden;
@@ -40,7 +48,7 @@
       header h1 {
         cursor: pointer;
         margin: 0;
-        font-family: 'Sinsitre', auto  ;
+        font-family: 'Centers', auto  ;
         font-size: 3vw;  
         color: #ffd700; 
       }
@@ -81,42 +89,47 @@
   
   .download{
     position: fixed;
-    top:3%;
+    bottom: 3%;
     right: 3%;
     z-index: 100;
+    transform: rotate(-90deg);
    }
 
   .download h1 {
     cursor: pointer;
     margin: 0;
-    font-family: 'Sinsitre', auto  ;
+    font-family: 'Celattin', auto  ;
     font-size: 3vw;  
     color: #ffd700; 
   }
 
   .download:hover{
     color: #fff;
-    filter: drop-shadow(0 0 .13rem #ffd700);
-    border-radius: 50%;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgba(255, 0, 255, 1), 0 0 16px #fff;
-    
+    text-shadow: 1px 1px 2px black, 0 0 25px rgba(255, 0, 255, 1), 0 0 5px #fff;
+   
   }
 
 
 
 
-  .GAN3D {
-      float: right;
-      font-size: 3em;
-      padding: 5px;
-      position: fixed;
-      bottom: 0%;
-      left: 0%;
-      border-radius: 50%;
-    }
-      
-    .GAN3D:hover {
-      filter: drop-shadow(0 0 3rem #ffd700);
-      border-radius: 50%;
-    }
-    
+  footer{
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 1000;
+    transform: rotate(90deg);
+   
+  }
+  footer h1 {
+    cursor: pointer;
+    margin: 0;
+    font-family: 'Celattin', auto  ;
+    font-size: 3vw;  
+    color: #ffd700; 
+  }
+  
+  footer:hover{
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgba(255, 0, 255, 1), 0 0 5px #fff;
+  }
+  
